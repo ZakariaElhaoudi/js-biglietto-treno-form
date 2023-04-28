@@ -35,6 +35,21 @@ let costoTotale = scontoViaggio.toFixed(2);
 document.getElementById("prezzo-biglietto").innerHTML = "Costo biglietto € "+ costoTotale;
 
 // L’output del prezzo finale tramite click button
+// function myFunction() {
+//     document.getElementById("prova").innerHTML = costoTotale;
+//   }
+
+
+document.getElementById("prova").addEventListener("click", myFunction);
+
 function myFunction() {
-    document.getElementById("prova").innerHTML = costoTotale;
-  }
+  document.getElementById("prova").innerHTML = costoTotale;
+}
+
+document.getElementById("prova").addEventListener("click", myFunction);
+
+function myFunction2() {
+    document.getElementById("myForm").reset();
+}
+
+
