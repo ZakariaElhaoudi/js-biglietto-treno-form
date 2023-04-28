@@ -8,19 +8,25 @@
     <title>Calcolatore costo biglietto</title>
 </head>
 <body>
-    <h1>Calcolatore costo biglietto</h1>
-    <p>Inserisci il numero di chilometri che vuoi percorrere e l'età del passeggero:</p>
-    <form id="myForm">
-      <label for="km">Kilometri:</label>
-      <input type="number" id="km" name="km" required>
-      <label for="eta">Età passeggero:</label>
-      <input type="number" id="eta" name="eta" required> 
-    </form>
-    <button onclick="myFunction()">Click me</button>
-    <button onclick="myFunction2()">Click me</button>
+    <div class="container">
+        <div class="row">
+            <h1>Calcolatore costo biglietto</h1>
+            <p>Inserisci il numero di chilometri che vuoi percorrere e l'età del passeggero:</p>
+            <form id="myForm">
+            <label for="km">Kilometri:</label>
+            <input type="number" id="km" name="km" required>
+            <label for="eta">Età passeggero:</label>
+            <input type="number" id="eta" name="eta" required> 
+            </form>
+        </div>
+        <button onclick="myFunction()">Click me</button>
+        <button onclick="myFunction2(), resetResult()">Click me2</button> 
+        <div id="risultato" style="display:none;" >
+            <p>Il costo del biglietto è:</p>
+            <p id="prezzo-biglietto"></p>
+        </div>
+    </div>
 
-    <p id="prova"></p>
-
-    <script type="text/javascript" src="./js/biglietto-treno.js"></script>
+    <script type="text/javascript" src="js/biglietto-treno.js"></script>
 </body>
 </html>
